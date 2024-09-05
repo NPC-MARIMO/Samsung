@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+#page1{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    padding: 0 2rem;
+}
+.navCenter{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    
+}
+.navRight img{
+    height: 27px;
+}
+nav span{
+    padding: .7rem;
+    font-size: .80rem;
+}
+nav span:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+.navRight i{
+    scale: 1.5;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navRight img:hover , .navRight i:hover{
+    cursor: pointer;
+}
+.navLeft img{
+    width: 9vw;
+}
+.navLeft img:hover{
+    cursor: pointer;
+}
+.images{
+    height: 80vh;
+    width: 100vw;
+    top: 100px;
+    display: flex   ;
+    overflow: hidden;
+    left: 2.5%;
+    position: absolute ;
+}
+.image{
+    height: 100%;
+    position: relative;
+    width: 100vw;
+    padding: 0 3.5vw;
+    object-fit: cover;
+}
+.texts{
+    position: relative;
+    width: 30vw;
+    overflow: hidden;
+    height: 13.3vw;
+    left: 10%;
+    top: 13vw;
+}
+.texts p{
+    padding: .2vw;
+    line-height: 25px;
+    padding-bottom: 2vw;
+
+}
+.texts h1{
+    padding: .5vw;
+    font-size: 3.3vw;
+}
+#white{
+    color: white;
+}
+.text p:nth-last-child(1){
+    color: #fff;
+}
+.text{
+    position: absolute;
+}
+.btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 45vh;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 2vw;
+    opacity: .5;
+}
+.l{
+    border: 1px solid rgb(108, 105, 105);
+    border-radius: 50%;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 2.33vw;
+    position: inherit;
+    width: 4vw;
+}
+.r{
+    border: 1px solid rgb(108, 105, 105);
+    border-radius: 50%;
+    height: 4vw;
+    position: inherit;
+    right: 2.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+}
+
+.centerLeft{
+    position: fixed;
+    height: 2vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 9;
+    left:15% ;
+}
+.dotsL{
+    height: 3px ;
+    margin-top: 1vw;
+    position: fixed ;
+    border-radius: 9px;
+    background-color: #000;
+    color: #fff;
+}
+.dotsL:nth-child(1){
+    opacity: .9;
+    left: 24.8%;
+    top: 4%;
+    width: 30px;
+}
+.shop{
+    gap: 2vw;
+    display: none;
+    justify-content: center;
+}
+.one p{
+    margin: 1.5vh 0;
+}
+.dotsL:nth-child(2){
+    opacity: .9;
+    left: 27.8%;
+    width: 20px;
+    top: 4%;
+}
+.ai p{
+    margin: 1.5vh 0;
+    display: none;
+    justify-content: center;
+}
+.dotsL:nth-child(3){
+    opacity: 0.9;
+    top: 4%;
+    left: 30%;
+    width: 40px;
+}
+.mobile{
+    gap: 2vw;
+    display: none;
+}
+.dotsL:nth-child(4){
+    opacity: .9;
+    left: 33.7%;
+    top: 4%;
+    width: 51px;
+}
+.tvnav{
+    gap: 2vw;
+    display: none;
+    justify-content: center;
+}
+.four h4{
+    margin: 3vw 1vw;
+}
+.four p{
+    margin: 1.5vh 1vw;
+}
+.centerRight{
+    position: fixed;
+    height: 2vh;
+    width: 4vw;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 9;
+    left:70% ;
+}
+.dotsR{
+    height: 3px ;
+    position: fixed ;
+    border-radius: 50px;
+    background-color: #000;
+}
+.dotsR:nth-child(1){
+    width: 95px;
+    top: 6%;
+    left: 37.9%;
+    opacity: .9;
+}
+
+.dotsR:nth-child(2){
+    top: 6%;
+    width: 110px;
+    left: 44.7%;
+    opacity: .9;
+}
+
+.dotsR:nth-child(3){
+    top: 6%;
+    width: 45px;
+    left: 52.5%;
+    opacity: .9;
+
+}
+.dotsR:nth-child(4){
+    top: 6%;
+    width: 70px;
+    left: 56.5%;
+}
+.dotsR:nth-child(5){
+    top: 6%;
+    width: 75px;
+    left: 62%;
+}
+.homeAppliances{
+    gap: 2vw;
+    display: none;
+    justify-content: center;
+}
+.five h4{
+    margin: 3vw 1vw;
+}
+.five p{
+    margin: 1.7vw 1vw;
+}
+.laptopnMoniters{
+    gap: 2vw;
+    display: none;
+    justify-content: center;
+}
+.six h4{
+    margin: 3vw 1vw;
+}
+.six p{
+    margin: 1.5vw 1vw;
+}
+.display{
+    gap: 2vw;
+    display: none;
+    justify-content: center;
+}
+.seven h4{
+    margin: 3vw 1vw;
+}
+.seven p{
+    margin: 1.5vw 1vw;
+}
+
+#page2{
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+#page2>h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.7vw;
+
+}
+.page2Nav h3:hover{
+    cursor : pointer;
+    opacity: .5;
+}
+.page2Nav{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 60%;
+    font-weight: 400;
+    color: grey;
+    position: absolute;
+    top: 12.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-evenly;
+
+}
+.page2NavContent{
+    margin-left: 4%;
+    display: flex;
+    position: relative;
+    top: 18%;
+    /* left: -95%; */
+    gap: 5vw;
+}
+.content{
+    height: 86vh;
+    width: 92vw;
+    position: relative;
+    display: flex;
+}
+.big{
+    width: 48%;
+    background-color: rebeccapurple;
+    height: 96%;
+    margin: 1% 1%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3vw;
+}
+.big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.row{
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    position: absolute;
+    gap: 1%;
+    display: flex;
+}
+.row1{
+    height: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    gap: 1%;
+}
+.small{
+    width: 49%;
+    height: 98%;
+    background-color: blue;
+    border-radius: 1.5vw;
+    position: relative;
+    overflow: hidden;
+}
+.small img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+
+}
+.page2Texts{
+    position: absolute;
+    display: flex;
+    gap: 5vw;
+}
+.page2Text:nth-child(3){
+    color: #000;
+}
+.page2Text:nth-child(3)>h2{
+    top : 12%;
+}
+.page2Text{
+    color: #fff;
+    height: 86vh;
+    width: 92vw;
+    position: relative;
+}
+.bigTxt{
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    height: 6vw;
+    left: 16%;
+}
+.bigTxt p{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vw;
+    font-weight: 400;
+    align-items: center;
+}
+.bigTxt p>button{
+    height: 2vw;
+    width: 5vw;
+    border-radius: 30px;
+    border: none;
+    scale : 0;
+    opacity: 0;
+    transition: all ease-in-out;
+    margin-top: 1.5vw;    
+}
+.smallTxt{
+    color: #fff;
+}
+.oneTxt{
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    left: 57.6%;
+}
+.twoTxt{    
+    position : absolute ;
+    top: 34%;
+    text-align: center;
+    left: 81.5%;
+}
+.threeTxt{
+    position: absolute;
+    text-align: center;
+    top: 83%;
+    left: 57.6%;
+}
+.fourTxt{
+    position : absolute ;
+    top: 83%;
+    text-align: center;
+    left: 81.5%;
+}
+.fiveTxt{
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    left: 57.6%;
+}
+.sixTxt{    
+    position : absolute ;
+    top: 34%;
+    text-align: center;
+    left: 81.5%;
+}
+.sevenTxt{
+    position: absolute;
+    text-align: center;
+    top: 83%;
+    left: 57.6%;
+}
+.eightTxt{
+    position : absolute ;
+    top: 83%;
+    text-align: center;
+    left: 81.5%;
+}
+.nineTxt{
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    left: 57.6%;
+}
+.oneZeroTxt{    
+    position : absolute ;
+    top: 34%;
+    text-align: center;
+    left: 81.5%;
+}
+.oneOneTxt{
+    position: absolute;
+    text-align: center;
+    top: 83%;
+    left: 57.6%;
+}
+.oneTwoTxt{
+    position : absolute ;
+    top: 83%;
+    text-align: center;
+    left: 81.5%;
+}
+.oneThreeTxt{
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    left: 57.6%;
+}
+.oneFourTxt{    
+    position : absolute ;
+    top: 34%;
+    text-align: center;
+    left: 81.5%;
+}
+.oneFiveTxt{
+    position: absolute;
+    text-align: center;
+    top: 83%;
+    left: 57.6%;
+}
+.oneSixTxt{
+    position : absolute ;
+    top: 83%;
+    text-align: center;
+    left: 81.5%;
+}
+.oneSevenTxt{
+    position: absolute;
+    text-align: center;
+    top: 83%;
+    left: 57.6%;
+}
+.oneEightTxt{
+    position : absolute ;
+    top: 35%;
+    text-align: center;
+    left: 81.5%;
+    color: #000;
+}
+.oneNineTxt{
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    left: 57.6%;
+}
+.twoZeroTxt{    
+    position : absolute ;
+    top: 85%;
+    text-align: center;
+    left: 82.5%;
+}
+.twoOneTxt{
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 57.6%;
+    color: #000;
+}
+.twoTwoTxt{ 
+    position : absolute ;
+    top: 35%;
+    text-align: center;
+    left: 84.5%;
+    color: #000;
+}
+.twoThreeTxt{
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 55%;
+    color: #000;
+}
+.twoFourTxt{    
+    position : absolute ;
+    top: 85%;
+    text-align: center;
+    left: 83%;
+    color: #000;
+}
